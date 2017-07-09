@@ -18,8 +18,13 @@ require 'sinatra'
 
 #-----------------------------------------------
 
-get '/' do
-  "HcUy6Re2LLBRtj"
-end
+# get '/' do
+#   "HcUy6Re2LLBRtj"
+# end
 
 # <div class="secret hide">HcUy6Re2LLBRtj</div>
+#-----------------------------------------------
+
+get '/' do
+ erb :index
+end

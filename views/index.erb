@@ -1,6 +1,15 @@
-<h1>Hola dime a quien saludar</h>
+<!-- <h1>Hola dime a quien saludar</h>
 
 <form action="/" method="post">
   <input type="text" name="name">
   <input type="submit">
-</form>
+</form> -->
+
+<h1>Hola</h1>
+<% for @i in 1..50 %>
+   <% if (@i.to_i % 2)==0 %>
+   <p><%= @i %> Soy par! </p>
+   	<% else %>
+   	<p><%= @i %> Soy impar! </p>
+   <% end %>
+<% end %>
