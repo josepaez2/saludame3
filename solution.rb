@@ -26,5 +26,11 @@ require 'sinatra'
 #-----------------------------------------------
 
 get '/' do
+  @entrada = params[:entrada].to_i
+ erb :index
+end
+
+get '/sum' do
+  @entrada = params[:entrada].to_i
  erb :index
 end

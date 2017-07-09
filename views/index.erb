@@ -5,11 +5,19 @@
   <input type="submit">
 </form> -->
 
-<h1>Hola</h1>
+<!-- <h1>Hola</h1>
 <% for @i in 1..50 %>
    <% if (@i.to_i % 2)==0 %>
    <p><%= @i %> Soy par! </p>
    	<% else %>
    	<p><%= @i %> Soy impar! </p>
    <% end %>
-<% end %>
+<% end %> -->
+
+
+<h1>Mi cuenta es: <%= @entrada %> </h1>
+
+  <form action="/sum" method="get">
+    <input type="hidden" value="<%= @entrada.to_i + 1 %>" name="entrada">
+    <input type="submit" value="Suma!!">
+  </form>
