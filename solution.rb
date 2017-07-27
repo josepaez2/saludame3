@@ -36,12 +36,12 @@ require 'sinatra'
 # end
 #------------------------------------------------
 
-Dilo
+# Dilo
 get '/' do
   erb :index
 end
 
-Respuesta
+# Respuesta
 post '/' do
   @entrada = params[:entrada].upcase
   if @entrada == params[:entrada]
