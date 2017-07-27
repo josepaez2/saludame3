@@ -57,26 +57,26 @@ require 'sinatra'
 # end
 #--------------------------------------------------
 
-get '/' do
-  permiso = 'soy-un-token-secreto'
-  if permiso == 'soy-un-token-secreto'
-    'Bienvenido!'
-  else
-    'Sin permiso'
-  end
-end
+# get '/' do
+#   permiso = 'soy-un-token-secreto'
+#   if permiso == 'soy-un-token-secreto'
+#     'Bienvenido!'
+#   else
+#     'Sin permiso'
+#   end
+# end
 # -------------------------------------------------
 
-# @resultado=0
-# get '/' do
-# 	result=""
-# 	result = request.env['HTTP_PERMISO']
-# 	if result=="soy-un-token-secreto"
-# 		 "Si lo logramos!"
-# 	else
-# 		 "Sin Permiso"
-# 	end
-# end
+@resultado = 0
+get '/' do
+	result=""
+	result = request.env['HTTP_PERMISO']
+	if result=="soy-un-token-secreto"
+		 "Si lo logramos!"
+	else
+		 "Sin Permiso"
+	end
+end
 
 
 
