@@ -8,13 +8,13 @@ require 'sinatra'
 #----------------------------------------------
 
 
-get '/' do
-  erb :index
-end
+# get '/' do
+#   erb :index
+# end
 
-post '/' do
-  erb :show
-end
+# post '/' do
+#   erb :show
+# end
 
 #-----------------------------------------------
 
@@ -25,15 +25,15 @@ end
 # <div class="secret hide">HcUy6Re2LLBRtj</div>
 #-----------------------------------------------
 
-# get '/' do
-#   @entrada = params[:entrada].to_i
-#  erb :index
-# end
-#
-# get '/sum' do
-#   @entrada = params[:entrada].to_i
-#  erb :index
-# end
+get '/' do
+  @entrada = params[:entrada].to_i
+ erb :index
+end
+
+get '/sum' do
+  @entrada = params[:entrada].to_i
+ erb :index
+end
 #------------------------------------------------
 
 #Dilo
