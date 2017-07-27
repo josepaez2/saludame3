@@ -36,25 +36,25 @@ require 'sinatra'
 # end
 #------------------------------------------------
 
-# Dilo
-get '/' do
-  erb :index
-end
+# # Dilo
+# get '/' do
+#   erb :index
+# end
 
-# Respuesta
-post '/' do
-  @entrada = params[:entrada].upcase
-  if @entrada == params[:entrada]
-    "Ahh si, manzanas!"
-  else
-     "<h1> Habla más duro mijito </h1>"
-  end
-end
+# # Respuesta
+# post '/' do
+#   @entrada = params[:entrada].upcase
+#   if @entrada == params[:entrada]
+#     "Ahh si, manzanas!"
+#   else
+#      "<h1> Habla más duro mijito </h1>"
+#   end
+# end
 #--------------------------------------------------
 
-# get '/' do
-#   request.env['HTTP_USER_AGENT']
-# end
+get '/' do
+  request.env['HTTP_USER_AGENT']
+end
 #--------------------------------------------------
 
 # get '/' do
